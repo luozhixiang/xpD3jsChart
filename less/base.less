@@ -1,0 +1,134 @@
+/* this is the demo css for the index.html place holder */
+/* DO NOT include this file in production applicaiton */
+
+body {
+	height: 100%;
+	background: #f9f9f9;
+	background-image: url(images/background.png);
+	overflow:hidden;
+}
+#page {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#side {
+	width: 170px;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+#content {
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	left: 190px;
+	right: 10px;
+}
+
+/* ----- nav side ------ */
+#create-new{
+	padding: 7px;
+	margin: 7px 0 0px 0;
+	background: #dfdfdf;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, rgb(240,240,240)),
+	color-stop(0.7, rgb(199,199,199))
+	);
+	background-image: -moz-linear-gradient(
+	center top,
+	rgb(240,240,240) 0%,
+	rgb(199,199,199) 50%
+	);
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	color: #666;	
+	letter-spacing: .2em;
+}
+.side-nav-header {
+	padding: 7px;
+	background: #dfdfdf;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, rgb(240,240,240)),
+	color-stop(0.7, rgb(199,199,199))
+	);
+	background-image: -moz-linear-gradient(
+	center top,
+	rgb(240,240,240) 0%,
+	rgb(199,199,199) 50%
+	);
+	border-bottom: solid 1px #acabac;
+}
+
+.side-nav-item{
+	padding: 5px 5px 5px 13px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.side-nav-item.level-2{
+	padding-left: 27px;
+}
+
+.side-nav-item.sel{
+	background: #C0D1F2;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+/* ----- /nav side ------ */
+
+
+/* ------ Tabs ------ */
+.tabs-bar{
+	height: 33px;
+	border-bottom: solid 1px #333;
+	padding-left: 23px;
+}
+.tabs-tab{
+	float: left;
+	border: solid 1px #999;
+	border-bottom: none;
+	margin: 0 20px 0 0;
+	padding: 7px 13px 7px 13px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	background: rgb(199,199,199);
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, rgb(199,199,199)),
+	color-stop(0.7, rgb(150,150,150))
+	);
+	background-image: -moz-linear-gradient(
+	center top,
+	rgb(199,199,199) 0%,
+	rgb(150,150,150) 70%
+	);
+	color: #555;
+}
+
+.tabs-tab.sel{
+	border-bottom: solid 1px #f8f8f8;
+	background: #fff;
+	font-weight: bold; 
+}
+.tabs-content{
+	position: absolute;
+	top: 34px; right: 0; bottom: 0; left: 0;
+	background: #f8f8f8;
+	overflow:auto;
+}
+/* ------ /Tabs ------ */
