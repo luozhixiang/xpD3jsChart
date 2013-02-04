@@ -21,6 +21,7 @@
 		
 	<!-- Component JS Files -->
 	<script type="text/javascript" src="js/D3LinesChart.js"></script>
+	<script type="text/javascript" src="js/D3PieChart.js"></script>
 	<!-- /Component JS Files -->
 	
 
@@ -35,6 +36,8 @@
 					$this.addClass("sel");
 					if(val == "D3LinesChart"){
 						brite.display("D3LinesChart",$("#reports-container"));
+					}else if(val == "D3PieChart"){
+						brite.display("D3PieChart",$("#reports-container"));
 					}
 				}
 			});
@@ -53,6 +56,7 @@
 				<div class='side-nav-section expanded'>
 					<div class='side-nav-header'>Reports</div>
 					<div class='side-nav-item'  data-section="D3LinesChart">D3Lines</div>
+					<div class='side-nav-item'  data-section="D3PieChart">D3Pie</div>
 				</div>
 			</div>
 		</div>

@@ -225,4 +225,120 @@ body {
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+.D3PieChart {
+  width: 98%;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0px 20px 0 20px;
+}
+.D3PieChart .D3PieChart-table {
+  float: left;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+.D3PieChart .pie-dataShow {
+  width: 440px;
+  margin: auto;
+  border-collapse: collapse;
+}
+.D3PieChart .pie-dataShow th {
+  width: 90px;
+  height: 30px;
+  padding: 0px 8px 0px 8px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: bolder;
+  background: #EDEDED;
+  border: 1px solid #C6C6C6;
+}
+.D3PieChart .pie-dataShow th.index {
+  width: 50px;
+}
+.D3PieChart .pie-dataShow th .ico {
+  float: right;
+  background-image: none;
+  height: 16px;
+  width: 16px;
+  margin-top: 7px;
+}
+.D3PieChart .pie-dataShow th.name-label {
+  width: 120px;
+}
+.D3PieChart .pie-dataShow td {
+  height: 20px;
+  font-weight: normal;
+  text-align: right;
+  padding: 4px 12px 4px 8px;
+  border: 1px solid #C6C6C6;
+}
+.D3PieChart .pie-dataShow td.textAlignLeft {
+  text-align: left;
+}
+.D3PieChart .pie-dataShow td .indexNum {
+  float: left;
+}
+.D3PieChart .pie-dataShow td .indexParColor {
+  height: 4px;
+  width: 8px;
+  border: 1px solid #3a3c36;
+  margin-left: 10px;
+  padding: 4px 0 4px 8px;
+  float: left;
+}
+.D3PieChart .pie-dataShow td.noBottomBorder {
+  border-bottom: 0px;
+}
+.D3PieChart .pie-dataShow .sel {
+  background: #a7dee5;
+  background: -moz-linear-gradient(top, #d3eff3, #a7dee5);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3eff3), to(#a7dee5));
+}
+.D3PieChart .pie-chartDiv {
+  width: 98%;
+}
+.D3PieChart .D3PieChartNoData {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #999999;
+  font-weight: bold;
+}
+.D3PieChart .pie-dataShow td .mailingNameURL {
+  cursor: pointer;
+}
+.D3PieChart .pie-dataShow td .mailingNameURL a {
+  color: #1E98A7;
+  text-decoration: none;
+}
+.D3PieChart .pie-dataShow .D3PieChartTable-data-table td {
+  border-left: none;
+  border-top: none;
+}
+.D3PieChart .pie-dataShow .D3PieChartTable-data-table th {
+  border: none;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.D3PieChart .pie-dataShow .D3PieChartTable-data-table td.rate {
+  border-right: none;
+}
+.D3PieChart .pie-dataShow .D3PieChartTable-data-table th.rate {
+  border-right: none;
+  width: 50px;
+}
+.D3PieChart .pie-dataShow .D3PieChartTable-data-table td.nodata {
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+}
+.D3PieChart .pie-dataShow td .pie-chartDiv-head {
+  height: 30px;
+  background: #ededed;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  line-height: 30px;
+  text-indent: 10px;
+}
 

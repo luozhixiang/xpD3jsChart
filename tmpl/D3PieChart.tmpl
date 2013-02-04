@@ -1,0 +1,36 @@
+<script id="tmpl-D3PieChart" type="text/html">
+	<div class="D3PieChart">
+		<div class="D3PieChart-table">
+			<table class="dataTable pie-dataShow">
+				<thead>
+					<tr>
+						<th class="legend-label">Legend</th>
+						<th class="name-label">Name</th>
+						<th class="value-label">Value</th>
+						<th class="percent-label">%</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+		<div id="D3PieChart"></div>
+	</div>
+</script>
+
+<script id="tmpl-dataTable-tableTbody" type="text/html">
+	{{#each tdata}}
+		<tr>
+			<td>
+				<div class="indexNum" data-target="target1">{{index}}</div>
+				<div class="indexParColor" style="background:{{color}}"></div> 
+			</td>
+			<td>{{name}}</td>
+			<td>{{value}}</td>
+			<td>{{percent}}%</td>
+		</tr>
+	{{/each}}
+</script>
+
+

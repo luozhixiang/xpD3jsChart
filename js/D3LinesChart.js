@@ -6,7 +6,7 @@ var smr = smr || {};
 	function D3LinesChart(){};
 	smr.D3LinesChart = D3LinesChart; 
   
-	D3LinesChart.prototype.build = function(data,config){
+	D3LinesChart.prototype.create = function(data,config){
 		var html = hrender("tmpl-D3LinesChart",{});
 		return html;
 	}
@@ -114,9 +114,9 @@ var smr = smr || {};
 	
 	
 	// --------- Component Registration --------- //
-	brite.registerComponent("D3LinesChart",{
+	brite.registerView("D3LinesChart",{
 		emptyParent: true,
-		loadTmpl: true
+		loadTmpl: false
 	},
 	function(){
 		return new smr.D3LinesChart();
