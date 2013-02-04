@@ -23,7 +23,8 @@ var smr = smr || {};
 					var date = new Date();
 					date.setDate(date.getDate() - i);
 					date.setHours(0, 0, 0, 0);
-					var obj = {'value' : Math.round(Math.random()*1200), 'date' : date};
+					var val = Math.round(Math.random()*1200);
+					var obj = {'value' : val>1000 ? 1000:val, 'date' : date};
 					data.push(obj);
 				}
 				return data;

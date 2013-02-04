@@ -7,7 +7,7 @@ Handlebars.templates['tmpl-D3LinesChart'] = Handlebars.template(function (Handle
   
 
 
-  return "<div id=\"lines-chart\"></div>";}
+  return "<div class=\"D3LinesChart\">\n		<div id=\"lines-chart\"></div>\n	</div>";}
 );
 
 // template --- tmpl-D3PieChart ---
@@ -54,4 +54,22 @@ function program1(depth0,data) {
   stack1 = helpers.each.call(depth0, stack1, {hash:{},inverse:self.noop,fn:self.program(1, program1, data)});
   if(stack1 || stack1 === 0) { return stack1; }
   else { return ''; }}
+);
+
+// template --- tmpl-MainScreen ---
+Handlebars.templates['tmpl-MainScreen'] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  helpers = helpers || Handlebars.helpers;
+  
+
+
+  return "<div class=\"MainScreen\">\n	    <div class=\"MainScreen-header\">\n			<div class=\"navbar  navbar-inverse navbar-fixed-top\">\n			  <div class=\"navbar-inner\">\n			    <a class=\"brand\" href=\"#\">D3JS Demo</a>\n			    <ul class=\"nav\">\n			      <li data-nav=\"Welcome\" class=\"menu active\">Welcome</li>\n			      <li data-nav=\"D3PieChart\" class=\"menu\">PieChart</li>\n			      <li data-nav=\"D3LinesChart\" class=\"menu\">LinesChart</li>\n			    </ul>\n			  </div>\n			</div>\n	    </div>\n	    <div class=\"MainScreen-main\"></div>\n    </div>";}
+);
+
+// template --- tmpl-Welcome ---
+Handlebars.templates['tmpl-Welcome'] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  helpers = helpers || Handlebars.helpers;
+  
+
+
+  return "<div class=\"Welcome\">\n		\n	</div>";}
 );

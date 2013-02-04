@@ -1,102 +1,10 @@
-/* this is the demo css for the index.html place holder */
-/* DO NOT include this file in production applicaiton */
 body {
   height: 100%;
   background: #f9f9f9;
   background-image: url(images/background.png);
   overflow: hidden;
 }
-#page {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-#side {
-  width: 170px;
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-#content {
-  position: absolute;
-  top: 30px;
-  bottom: 30px;
-  left: 190px;
-  right: 10px;
-}
-/* ----- nav side ------ */
-#create-new {
-  padding: 7px;
-  margin: 7px 0 0px 0;
-  background: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(0.7, #c7c7c7));
-  background-image: -moz-linear-gradient(center top, #f0f0f0 0%, #c7c7c7 50%);
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  color: #666;
-  letter-spacing: .2em;
-}
-.side-nav-header {
-  padding: 7px;
-  background: #dfdfdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(0.7, #c7c7c7));
-  background-image: -moz-linear-gradient(center top, #f0f0f0 0%, #c7c7c7 50%);
-  border-bottom: solid 1px #acabac;
-}
-.side-nav-item {
-  padding: 5px 5px 5px 13px;
-  background: #fff;
-  cursor: pointer;
-}
-.side-nav-item.level-2 {
-  padding-left: 27px;
-}
-.side-nav-item.sel {
-  background: #C0D1F2;
-  font-weight: bold;
-  letter-spacing: .1em;
-}
-/* ----- /nav side ------ */
-/* ------ Tabs ------ */
-.tabs-bar {
-  height: 33px;
-  border-bottom: solid 1px #333;
-  padding-left: 23px;
-}
-.tabs-tab {
-  float: left;
-  border: solid 1px #999;
-  border-bottom: none;
-  margin: 0 20px 0 0;
-  padding: 7px 13px 7px 13px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  background: #c7c7c7;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c7c7c7), color-stop(0.7, #969696));
-  background-image: -moz-linear-gradient(center top, #c7c7c7 0%, #969696 70%);
-  color: #555;
-}
-.tabs-tab.sel {
-  border-bottom: solid 1px #f8f8f8;
-  background: #fff;
-  font-weight: bold;
-}
-.tabs-content {
-  position: absolute;
-  top: 34px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #f8f8f8;
-  overflow: auto;
-}
-/* ------ /Tabs ------ */.tipsy {
+.tipsy {
   font-size: 10px;
   position: absolute;
   padding: 5px;
@@ -206,6 +114,59 @@ body {
   border-top-color: transparent;
   border-bottom-color: transparent;
 }
+.MainScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.MainScreen .MainScreen-main {
+  top: 50px;
+  overflow: auto;
+}
+.MainScreen .MainScreen-header {
+  width: 100%;
+}
+.MainScreen .MainScreen-header .navbar-inner .brand {
+  margin-left: 0px;
+}
+.MainScreen .MainScreen-header .nav {
+  height: 38px;
+}
+.MainScreen .MainScreen-header .nav li {
+  cursor: pointer;
+  height: 100%;
+  line-height: 38px;
+  padding: 0 10px;
+  color: #999999;
+}
+.MainScreen .MainScreen-header .nav li:hover {
+  color: #ffffff;
+}
+.MainScreen .MainScreen-header .nav li.active {
+  text-decoration: none;
+  height: 100%;
+  color: #ffffff;
+}
+.Welcome {
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.D3LinesChart {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 20px 20px 0 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.D3LinesChart #lines-chart {
+  margin-top: 20px;
+}
 .axis path {
   fill: none;
   stroke: #000;
@@ -226,11 +187,12 @@ body {
   stroke-width: 1.5px;
 }
 .D3PieChart {
-  width: 98%;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  margin: 0px 20px 0 20px;
+  margin: 20px 20px 0 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 .D3PieChart .D3PieChart-table {
   float: left;

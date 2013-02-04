@@ -43,31 +43,14 @@
 			});
 			brite.display("D3LinesChart",$("#reports-container"));
 		});
+		$(function(){
+			brite.display("MainScreen","#bodyPage");
+		});
 	</script>
 
 </head>
 
 <body>
-
-	<div id="page">
-		<div id="side">
-			<div id="create-new"><span class="ico icoPlus"></span><label>Create New</label></div>
-			<div id="side-nav">
-				<div class='side-nav-section expanded'>
-					<div class='side-nav-header'>Reports</div>
-					<div class='side-nav-item'  data-section="D3LinesChart">D3Lines</div>
-					<div class='side-nav-item'  data-section="D3PieChart">D3Pie</div>
-				</div>
-			</div>
-		</div>
-		<div id="content">
-			<div class="tabs-bar">
-				<div class="tabs-tab sel">Reports</div>
-			</div>
-			<div id="reports-container" class='tabs-content'>
-			
-			</div>
-		</div>
-	</div>
+	<div id="bodyPage"></div>
 </body>
 </html>
